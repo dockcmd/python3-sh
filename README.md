@@ -12,7 +12,7 @@ ti= ./python3.sh
 
 ## Shln Install
 
-To install with [shln](https://github.com/sageify/shln)
+To install with [shln](https://github.com/sageify/shln):
 
 ```bash
 shln install dockcmd/python3-sh
