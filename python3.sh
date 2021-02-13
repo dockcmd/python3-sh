@@ -1,11 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
 . shmod
+import github.com/dockcmd/sh@v0.0.3 docker.sh
 
-include github.com/dockcmd/shmod util.sh
-
-exec_or_dryrun \
-  $(docker_run) \
-  $(docker_user) \
-  $(docker_home_workdir) \
-  $(docker_image dcmd/python3 v3.6.7) \
-  "$@"
+run `hwm= docker dcmd/python3 "$@"`
